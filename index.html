@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Портфолио Junior верстальщика</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+  </head>
+
+  <body class="page">
+    <header class="page-header">
+     <div class="container">   
+      <p class="contacts"><i>По всем вопросам пишите:</i><br>
+        <a href="mailto:yfssioo@gmail.com" class="header-email">yfssioo@gmail.com</a><br>
+        <a href="tel:+7999999999" class="header-phone">+7 999 999-99-99</a>
+      </p>
+      <button class="theme-button" type="button">Изменить тему</button>
+    </div>
+    </header>
+
+
+    <section class="hero-image">
+       <div class="container">
+        <h1 class="heading">Николь</h1>
+      <p>Junior верстальщик</p>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container">
+      <h2 class="subheading">Давайте познакомимся</h2>
+      <h3>Пара слов о себе</h3>
+      <p>Начала 2021 год с изучения веб-программирования, специализируюсь на языках HTML, CSS, PHP, javascript, векторной графике. <br>
+      Хочу получить опыт в области веб-разработки и командной работе.<br>
+      Меня интересует внедрение новейших IT-технологий в повседневную жизнь, дизайн сайтов и работа с Big Data.  </p> <br>
+   
+      <h3>Чем могу быть полезна:</h3> 
+      <p> <input type="checkbox" name="1" checked class="checkbox">Владею языком HTML на среднем уровне;</p>
+    <!-- <p class="skills">  <dl class="skills-list">
+      <dt><h3>HTML</h3></dt>
+         <dd><div class="skills-level skills-level-ok">60%</div></dd>
+        </p> -->
+     <p><input type="checkbox" name="2" checked class="checkbox">Владею языком CSS на среднем уровне;</p>
+    <p><input type="checkbox" name="3" checked class="checkbox">Владею языком JS на начальном уровне;</p>
+  <p><input type="checkbox" name="4" checked class="checkbox">Умею создавать векторную графику формата SVG;</p>
+ <p><input type="checkbox" name="5" checked class="checkbox">Владею языком PHP на начальном уровне;</p>
+ <p><input type="checkbox" name="6" checked class="checkbox">Прошла обучение на популярной платформе HTML Academy;</p>
+    </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+      <h2 class="subheading">Мои работы</h2>
+
+      <ul class="projects">
+
+        <li> <h3>Сайт-визитка</h3>
+      <p>Пример презентующей страницы. </p>
+      <button class="button button1" type="button">
+        <a href="example1/index.html">Посмотреть</a></button>
+    </li>
+
+      <li><h3>Блог начинающего верстальщика</h3>
+      <p>Статический блог про обучение HTML и CSS.</p>
+     <button class="button button2" type="button">
+      <a href="example2/index.html">Посмотреть</a></button>
+      </li>
+
+      <li><h3>Сайт магазина Gloevk</h3>
+      <p>Страница интернет-магазина товаров для дома.</p>
+     <button class="button button3" type="button">
+      <a href="example3/index.html">Посмотреть</a></button>
+      </li>
+
+      </ul>
+    </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+      <p class="contacts"><i>По всем вопросам пишите:</i><br>
+        <a href="mailto:yfssioo@gmail.com"  class="footer-email">yfssioo@gmail.com</a><br>
+        <a href="tel:+7999999999"  class="footer-phone">+7 999 999-99-99</a>
+      </p>
+      <p class="copyright">© Nicol</p>
+       </div>
+    </footer>
+
+    <script type="text/javascript">
+      let page = document.querySelector('.page');
+
+page.classList.add('dark-theme');
+let themeButton = document.querySelector('.theme-button');
+themeButton.onclick = function() {
+  page.classList.toggle('dark-theme');
+}; 
+    </script>
+  </body> 
+</html>
